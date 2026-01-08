@@ -35,6 +35,24 @@
       "icons/128x128@2x.png",
       "icons/icon.icns",
       "icons/icon.ico"
-    ]
+    ],
+    "publisher": "Galaxy Co AI",
+    "copyright": "Copyright (c) 2025 Galaxy Co AI",
+    "category": "DeveloperTool",
+    "shortDescription": "A Claude Code GUI with live preview",
+    "longDescription": "Wingman is a desktop application that provides a beautiful chat interface for Claude Code with live file preview, session management, and seamless coding workflow.",
+    "windows": {
+      "wix": {
+        "language": "en-US"
+      }
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    },
+    "linux": {
+      "desktop": {
+        "categories": ["Development", "IDE"]
+      }
+    }
   }
 }
