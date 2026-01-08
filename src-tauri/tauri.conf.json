@@ -50,8 +50,11 @@
       "minimumSystemVersion": "10.15"
     },
     "linux": {
-      "desktop": {
-        "categories": ["Development", "IDE"]
+      "deb": {
+        "desktopTemplate": null
+      },
+      "appimage": {
+        "bundleMediaFramework": false
       }
     }
   }
