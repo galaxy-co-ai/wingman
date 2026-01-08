@@ -1,0 +1,78 @@
+.divider {
+  position: relative;
+  flex-shrink: 0;
+  background-color: var(--color-border-muted);
+  transition: background-color var(--duration-fast) var(--ease-out);
+}
+
+.divider:hover,
+.divider:focus-visible,
+.divider.dragging {
+  background-color: var(--color-accent);
+}
+
+.divider:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent-muted);
+}
+
+/* Horizontal (left-right) */
+.horizontal {
+  width: 1px;
+  cursor: col-resize;
+}
+
+.horizontal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  right: -4px;
+}
+
+/* Vertical (top-bottom) */
+.vertical {
+  height: 1px;
+  cursor: row-resize;
+}
+
+.vertical::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -4px;
+  bottom: -4px;
+}
+
+/* Handle indicator (shown on hover) */
+.handle {
+  position: absolute;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+.divider:hover .handle,
+.divider:focus-visible .handle,
+.divider.dragging .handle {
+  opacity: 1;
+}
+
+.horizontal .handle {
+  width: 4px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical .handle {
+  width: 32px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

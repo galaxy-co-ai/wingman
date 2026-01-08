@@ -1,0 +1,112 @@
+/* CodeBlock styles */
+
+.container {
+  position: relative;
+  margin: var(--spacing-sm) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-surface-inset);
+  border: 1px solid var(--color-border);
+}
+
+/* Header with language and filename */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--font-size-xs);
+}
+
+.language {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+}
+
+.filename {
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+}
+
+.copyButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--animation-fast);
+}
+
+.copyButton:hover {
+  background: var(--color-surface-hover);
+  color: var(--color-text-primary);
+}
+
+.copyButton:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.copied {
+  color: var(--color-success);
+}
+
+/* Code content */
+.code {
+  padding: var(--spacing-md);
+  margin: 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-code);
+  tab-size: 2;
+  -webkit-overflow-scrolling: touch;
+}
+
+.code code {
+  display: block;
+  white-space: pre;
+  background: transparent;
+  padding: 0;
+}
+
+/* Scrollbar styling */
+.code::-webkit-scrollbar {
+  height: 8px;
+}
+
+.code::-webkit-scrollbar-track {
+  background: var(--color-surface-inset);
+}
+
+.code::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+.code::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Line numbers (optional future feature) */
+.withLineNumbers .code {
+  counter-reset: line;
+}
+
+.withLineNumbers .code code::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 2em;
+  margin-right: var(--spacing-md);
+  color: var(--color-text-muted);
+  text-align: right;
+}

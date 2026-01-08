@@ -1,0 +1,63 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.urlContainer {
+  flex: 1;
+  min-width: 0;
+}
+
+.urlInput {
+  width: 100%;
+  height: 28px;
+  padding: 0 var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  font-family: var(--font-family-mono);
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.urlInput:focus {
+  border-color: var(--color-primary);
+}
+
+.urlInput::placeholder {
+  color: var(--text-tertiary);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xxs);
+}
+
+.controlButton {
+  padding: var(--spacing-xs);
+}
+
+.controlButton.active {
+  color: var(--color-primary);
+  background: var(--bg-tertiary);
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

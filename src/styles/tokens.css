@@ -1,0 +1,199 @@
+/* Design Tokens - CSS Custom Properties
+ * Based on doc 16-design-tokens.md
+ * Dark theme is default, light theme overrides in themes/light.css
+ */
+
+:root {
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * COLOR TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Background colors */
+  --color-bg-primary: #0d1117;
+  --color-bg-secondary: #161b22;
+  --color-bg-tertiary: #21262d;
+  --color-bg-elevated: #1c2128;
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Surface colors */
+  --color-surface: #161b22;
+  --color-surface-elevated: #21262d;
+  --color-surface-hover: #30363d;
+  --color-surface-active: #484f58;
+
+  /* Border colors */
+  --color-border: #30363d;
+  --color-border-muted: #21262d;
+  --color-border-focus: #58a6ff;
+
+  /* Text colors */
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b949e;
+  --color-text-muted: #6e7681;
+  --color-text-inverse: #0d1117;
+  --color-text-link: #58a6ff;
+
+  /* Accent colors (Teal) */
+  --color-accent: #2dd4bf;
+  --color-accent-hover: #5eead4;
+  --color-accent-muted: rgba(45, 212, 191, 0.15);
+  --color-accent-text: #2dd4bf;
+
+  /* Semantic colors */
+  --color-success: #3fb950;
+  --color-success-bg: rgba(63, 185, 80, 0.15);
+  --color-warning: #d29922;
+  --color-warning-bg: rgba(210, 153, 34, 0.15);
+  --color-error: #f85149;
+  --color-error-bg: rgba(248, 81, 73, 0.15);
+  --color-info: #58a6ff;
+  --color-info-bg: rgba(88, 166, 255, 0.15);
+
+  /* Message colors */
+  --color-message-user-bg: #21262d;
+  --color-message-assistant-bg: transparent;
+  --color-message-user-border: #30363d;
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * TYPOGRAPHY TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Font families */
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-md: 0.875rem;   /* 14px */
+  --font-size-lg: 1rem;       /* 16px */
+  --font-size-xl: 1.125rem;   /* 18px */
+  --font-size-2xl: 1.25rem;   /* 20px */
+  --font-size-3xl: 1.5rem;    /* 24px */
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * SPACING TOKENS (4px base unit)
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+  --spacing-5: 1.25rem;   /* 20px */
+  --spacing-6: 1.5rem;    /* 24px */
+  --spacing-8: 2rem;      /* 32px */
+  --spacing-10: 2.5rem;   /* 40px */
+  --spacing-12: 3rem;     /* 48px */
+  --spacing-16: 4rem;     /* 64px */
+
+  /* Semantic spacing */
+  --spacing-xs: var(--spacing-1);
+  --spacing-sm: var(--spacing-2);
+  --spacing-md: var(--spacing-4);
+  --spacing-lg: var(--spacing-6);
+  --spacing-xl: var(--spacing-8);
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * BORDER RADIUS TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  --radius-none: 0;
+  --radius-sm: 0.25rem;   /* 4px */
+  --radius-md: 0.375rem;  /* 6px */
+  --radius-lg: 0.5rem;    /* 8px */
+  --radius-xl: 0.75rem;   /* 12px */
+  --radius-full: 9999px;
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * SHADOW TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-focus: 0 0 0 3px rgba(45, 212, 191, 0.3);
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * Z-INDEX TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-popover: 500;
+  --z-tooltip: 600;
+  --z-toast: 700;
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * ANIMATION TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Durations */
+  --duration-instant: 50ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 500ms;
+
+  /* Easings */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * LAYOUT TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Window sizing */
+  --window-min-width: 900px;
+  --window-min-height: 600px;
+  --window-default-width: 1400px;
+  --window-default-height: 900px;
+
+  /* Panel constraints */
+  --panel-min-width: 300px;
+  --panel-max-width: 800px;
+  --panel-default-split: 50%;
+
+  /* Component heights */
+  --titlebar-height: 38px;
+  --statusbar-height: 24px;
+  --tabbar-height: 36px;
+  --input-height: 36px;
+  --input-height-sm: 28px;
+  --input-height-lg: 44px;
+  --button-height: 32px;
+  --button-height-sm: 24px;
+  --button-height-lg: 40px;
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+   * COMPONENT-SPECIFIC TOKENS
+   * ═══════════════════════════════════════════════════════════════════════════ */
+
+  /* Scrollbar */
+  --scrollbar-width: 8px;
+  --scrollbar-track: var(--color-bg-primary);
+  --scrollbar-thumb: var(--color-border);
+  --scrollbar-thumb-hover: var(--color-text-muted);
+
+  /* Code blocks */
+  --code-bg: #1a1f26;
+  --code-border: var(--color-border);
+}

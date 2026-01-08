@@ -1,0 +1,67 @@
+/* Light Theme
+ * Override dark theme defaults with light mode colors
+ */
+
+[data-theme='light'] {
+  /* Background colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f6f8fa;
+  --color-bg-tertiary: #eaeef2;
+  --color-bg-elevated: #ffffff;
+  --color-bg-overlay: rgba(0, 0, 0, 0.3);
+
+  /* Surface colors */
+  --color-surface: #f6f8fa;
+  --color-surface-elevated: #ffffff;
+  --color-surface-hover: #eaeef2;
+  --color-surface-active: #d0d7de;
+
+  /* Border colors */
+  --color-border: #d0d7de;
+  --color-border-muted: #eaeef2;
+  --color-border-focus: #0969da;
+
+  /* Text colors */
+  --color-text-primary: #1f2328;
+  --color-text-secondary: #656d76;
+  --color-text-muted: #8c959f;
+  --color-text-inverse: #ffffff;
+  --color-text-link: #0969da;
+
+  /* Accent colors (adjusted for light mode) */
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-accent-muted: rgba(13, 148, 136, 0.1);
+  --color-accent-text: #0d9488;
+
+  /* Semantic colors */
+  --color-success: #1a7f37;
+  --color-success-bg: rgba(26, 127, 55, 0.1);
+  --color-warning: #9a6700;
+  --color-warning-bg: rgba(154, 103, 0, 0.1);
+  --color-error: #cf222e;
+  --color-error-bg: rgba(207, 34, 46, 0.1);
+  --color-info: #0969da;
+  --color-info-bg: rgba(9, 105, 218, 0.1);
+
+  /* Message colors */
+  --color-message-user-bg: #f6f8fa;
+  --color-message-assistant-bg: transparent;
+  --color-message-user-border: #d0d7de;
+
+  /* Shadows (lighter for light mode) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(13, 148, 136, 0.3);
+
+  /* Scrollbar */
+  --scrollbar-track: #f6f8fa;
+  --scrollbar-thumb: #d0d7de;
+  --scrollbar-thumb-hover: #8c959f;
+
+  /* Code blocks */
+  --code-bg: #f6f8fa;
+  --code-border: #d0d7de;
+}

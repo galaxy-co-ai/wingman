@@ -1,0 +1,91 @@
+.entry {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.15s ease;
+}
+
+.entry.clickable {
+  cursor: pointer;
+}
+
+.entry.clickable:hover {
+  background-color: var(--bg-hover);
+}
+
+.entry.clickable:focus {
+  outline: 2px solid var(--border-focus);
+  outline-offset: -2px;
+}
+
+/* Operation icon */
+.icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  margin-top: 2px;
+}
+
+.icon.created {
+  color: var(--success);
+  background-color: var(--success-subtle);
+}
+
+.icon.modified {
+  color: var(--info);
+  background-color: var(--info-subtle);
+}
+
+.icon.deleted {
+  color: var(--error);
+  background-color: var(--error-subtle);
+}
+
+/* File content */
+.content {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.fileName {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.directory {
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Metadata */
+.meta {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.sourceBadge {
+  font-size: 10px;
+}
+
+.timestamp {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}

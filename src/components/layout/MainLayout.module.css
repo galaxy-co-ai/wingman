@@ -1,0 +1,48 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Left Panel */
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  min-width: var(--panel-min-width);
+  max-width: var(--panel-max-width);
+  overflow: hidden;
+}
+
+.tabBar {
+  flex-shrink: 0;
+}
+
+.leftContent {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Right Panel */
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  min-width: var(--panel-min-width);
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.rightContent {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}

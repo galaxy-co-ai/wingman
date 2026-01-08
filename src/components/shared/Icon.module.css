@@ -1,0 +1,38 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Sizes */
+.xs {
+  width: 12px;
+  height: 12px;
+}
+
+.sm {
+  width: 14px;
+  height: 14px;
+}
+
+.md {
+  width: 16px;
+  height: 16px;
+}
+
+.lg {
+  width: 20px;
+  height: 20px;
+}
+
+.xl {
+  width: 24px;
+  height: 24px;
+}
