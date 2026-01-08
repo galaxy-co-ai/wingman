@@ -55,3 +55,7 @@ open = "5"
 
 # Find executables in PATH
 which = "6"
+
+# Unix signal handling
+[target.'cfg(unix)'.dependencies]
+nix = { version = "0.29", features = ["signal"] }
